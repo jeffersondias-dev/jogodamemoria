@@ -2,7 +2,7 @@ import './style.css';
 
 function PLayerGame(content) {
     return /*html*/ `
-    <p>${content}</p>
+    <p class="player-name">${content}</p>
 
     `;
 
