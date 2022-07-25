@@ -1,6 +1,6 @@
 import './style.css';
 
-function PLayerGame(content) {
+function PlayerGame(content) {
     return /*html*/ `
     <p class="player-name">${content}</p>
 
@@ -8,4 +8,4 @@ function PLayerGame(content) {
 
 }
 
-export default PLayerGame;
+export default PlayerGame;
