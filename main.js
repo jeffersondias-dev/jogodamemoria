@@ -5,6 +5,6 @@ import BoardGame from './src/objects/BoardGame';
 
 
 const $root = document.querySelector('#root');
-const $htmlBoardGame = BoardGame(2, 'field-agent') + BoardGame(2, 'intelligencer');
+const $htmlBoardGame = BoardGame(6, 'field-agent');
 
 $root.insertAdjacentHTML('beforeend', $htmlBoardGame);
