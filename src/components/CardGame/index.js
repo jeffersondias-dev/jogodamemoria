@@ -1,9 +1,9 @@
 import './style.css';
 
-function CardGame(cardLogo = "field-agent", alt = "field-agent") {
+function CardGame(icon = "field-agent", alt = "Field Agent") {
     return /*html*/ `
         <article class="card-game">
-            <img src="/src/images/${cardLogo}.png" alt="${alt}">
+            <img src="/src/images/${icon}.png" alt="${alt}">
         </article>
     `;
 }

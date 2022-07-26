@@ -4,10 +4,15 @@ import CardGame from '../CardGame';
 function CardFrontBack() {
     return /*html*/ `
       <article class="card-front-back">
-        ${CardGame()}
-        ${CardGame('html', 'html')}
+      <div class="card -front">
+          ${CardGame()}
+      </div>
+      <div class="card -back">
+          ${CardGame('html', 'HTML')}
+      </div>
       </article>
-      ` ;
+
+    `;
 }
 
 export default CardFrontBack;
