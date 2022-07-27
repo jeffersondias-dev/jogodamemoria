@@ -1,8 +1,8 @@
-import './src/styles/settings/colors.css';
-import './src/styles/generic/reset.css'
-import './src/styles/elements/base.css';
-import ScoreBoard from './src/objects/ScoreBoard';
-import BoardGame from './src/objects/BoardGame';
+import '/public/src/styles/settings/colors.css';
+import '/public/src/styles/generic/reset.css'
+import '/public/src/styles/elements/base.css';
+import ScoreBoard from '/public/src/objects/ScoreBoard';
+import BoardGame from '/public/src/objects/BoardGame';
 
 
 
