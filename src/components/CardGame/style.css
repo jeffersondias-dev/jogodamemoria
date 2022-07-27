@@ -10,6 +10,6 @@
 }
 
 .card-game img {
-    width: auto;
-    height: 110px;
+    width: var(--width-images);
+    height: var(--height-images);
 }
