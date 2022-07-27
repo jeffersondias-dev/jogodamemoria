@@ -1,0 +1,11 @@
+.player-score {
+    display: flex;
+
+}
+
+.player-score>.visual-score {
+    background-color: var(--color-azul-claro);
+    height: auto;
+    width: 10px;
+    border: 1px solid var(--color-azul);
+}
