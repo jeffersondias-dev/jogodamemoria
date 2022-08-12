@@ -6,12 +6,11 @@ import VsPlayer from '../../components/VsPlayer';
 function ScoreBoard(content) {
     return /*html*/ `
     <header class="score-board">
-
         ${PlayerName("Player 1")}
         ${PlayerScore()}
         ${VsPlayer()}
         ${PlayerScore()}
-        ${PlayerName("Player 2")}
+        ${PlayerName("Player 2")}  
     </header>
 `;
 }
