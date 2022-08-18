@@ -1,7 +1,11 @@
 :root {
     --color-azul: #02032e;
     --color-azul-claro: #5dbff2;
+    --color-floral-white: #fffcee;
     --color-amarelo: #ffc000;
+    --color-fiery-rose: #ff5757;
     --color-card-front: #02032e;
     --color-card-back: #05077a;
+    --color-old-silver: #828282;
+    --color-green: #62c370
 }
