@@ -1,8 +1,8 @@
 :root {
     --width-default: 120px;
-    --height-default: 150px;
+    --height-default: 140px;
     --width-images: auto;
-    --height-images: 100px;
+    --height-images: 125px;
 }
 
 
@@ -14,7 +14,7 @@ body {
 
 body {
     background-color: darkgray;
-    max-width: 320px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Press Start 2P', cursive;
