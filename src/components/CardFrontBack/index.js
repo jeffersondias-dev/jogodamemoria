@@ -14,10 +14,10 @@ function CardFrontBack() {
     return /*html*/ `
       <article class="card-front-back" onClick="cardFrontBack.handleClick(event)">
       <div class="card -front">
-          ${CardGame()}
+          ${CardGame('front', 'front')}
       </div>
       <div class="card -back">
-          ${CardGame('html', 'HTML')}
+          ${CardGame('crown', 'crown')}
       </div>
       </article>
 

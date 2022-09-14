@@ -1,3 +1,4 @@
+
 .card-front-back {
     width: var(--width-default);
     height: var(--height-default);
@@ -6,6 +7,7 @@
     transition: 0.6s cubic-bezier(0.40, 0, 0.55, 1.70);
     cursor: pointer;
 }
+
 
 .card-front-back.-active {
     transform: rotateY(180deg)
@@ -20,10 +22,3 @@
     transform: rotateY(180deg)
 }
 
-.card-front-back>.card.-front>.card-game {
-    background-color: var(--color-card-front);
-}
-
-.card-front-back>.card.-back>.card-game {
-    background-color: var(--color-card-back);
-}
