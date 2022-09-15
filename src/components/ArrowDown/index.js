@@ -10,4 +10,5 @@ function ArrowDown(currentPlayer = 1) {
   `;
 }
 
+
 export default ArrowDown;
