@@ -16,7 +16,6 @@ function BoardGame(amountCards) {
         $arrowDown.setAttribute('data-currentPlayer', currentPlayer == 1 ? 2 : 1);
     };
 
-
     window.boardGame = {}
     window.boardGame.handleClick = () => {
 
@@ -34,7 +33,6 @@ function BoardGame(amountCards) {
         }
     }
 
-
     const randomCards = (htmlCardsList) => {
         for (let i = 0; i < htmlCardsList.length; i++) {
             let randomNumber = Math.floor(Math.random() * htmlCardsList.length);
@@ -47,6 +45,8 @@ function BoardGame(amountCards) {
     const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon));
     randomCards(htmlCardsList);
     const $htmlCards = htmlCardsList.join('');
+
+
 
     return /*html*/`
         <section class="board-game" onClick="boardGame.handleClick()">
