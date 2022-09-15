@@ -1,11 +1,11 @@
 .arrow-down {
-    width: 5%;
+    width: 25px;
     position: absolute;
-    top: 2px;
-    transform: translateX(-46px);
+    top: 40px;
+    transform: translateX(-45px);
     transition: transform 200ms ease-in-out;
 }
 
 .arrow-down[data-currentPlayer="2"] {
-    transform: translateX(46px);
+    transform: translateX(45px);
 }
