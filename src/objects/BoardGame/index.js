@@ -28,6 +28,9 @@ function BoardGame(amountCards) {
                 swapPlayer();
             }, 1000);
         }
+        else if ($cardsActive.length >= 3) {
+            flipAndHideCards($cardsActive);
+        }
     }
     
     const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon));

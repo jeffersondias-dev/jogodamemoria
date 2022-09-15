@@ -1,8 +1,8 @@
 :root {
-    --width-default: 60px;
-    --height-default: 80px;
+    --width-default: 50px;
+    --height-default: 50px;
     --width-images: auto;
-    --height-images: 70px;
+    --height-images: 50px;
 }
 
 html,
