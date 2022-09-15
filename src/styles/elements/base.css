@@ -13,9 +13,10 @@ body {
 }
 
 body {
-    background-color: darkgray;
+    background-color: #46056d;
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Press Start 2P', cursive;
+    padding: 10px;
 }

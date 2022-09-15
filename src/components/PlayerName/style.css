@@ -1,5 +1,5 @@
 .player-name {
-    font-size: 1rem;
-    color: var(--color-azul);
-    text-shadow: 2px 2px 2px gray;
+    font-size: 1.1rem;
+    color: #ff9900;
+    text-shadow: 2px 2px 2px #000;
 }
