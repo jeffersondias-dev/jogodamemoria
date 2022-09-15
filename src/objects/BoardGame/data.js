@@ -96,7 +96,32 @@ const cards = [
     {
         icon: "bluePotion", 
         altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    }
+    },
+    {
+        icon: "bluePotion", 
+        altIscon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
+    },
+    {
+        icon: "star", 
+        altIcon: "a star icon, Um icone de uma estrela"
+    },
+    {
+        icon: "trophy", 
+        altIcon: "a trophy icon, Um icone de um troféu"
+    },
+    {
+        icon: "redPotion", 
+        altIcon: "a Red potion icon, Um icone de uma garrafa na cor azul"
+    },
+    {
+        icon: "bluePotion", 
+        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
+    },
+    {
+        icon: "bluePotion", 
+        altIscon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
+    },
+
 ];
 
 export default cards;
