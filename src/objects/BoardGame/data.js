@@ -1,11 +1,31 @@
 const cards = [
     {
+        icon: "bluePotion", 
+        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
+    },
+    {
         icon: "crown", 
         altIcon: "a crown icon, Um icone de uma coroa"
     },
     {
         icon: "diamond", 
         altIcon: "a start icon, Um icone de um diamante"
+    },
+    {
+        icon: "flag", 
+        altIcon: "a flag icon, Um icone de uma bandeira"
+    },
+    {
+        icon: "gold-star",
+        altIcon: "a Gold star icon, Um icone de uma estrala dourada"
+    },
+    {
+        icon: "heart",
+        altIcon: "a heart icon, Um icone de um coração"
+    },
+    {
+        icon: "hourglass",
+        altIcon: "a hourglass icon, Um icone de um ampulheta"
     },
     {
         icon: "letter", 
@@ -16,37 +36,20 @@ const cards = [
         altIcon: "a lightning icon, Um icone de um raio"
     },
     {
-        icon: "star", 
-        altIcon: "a star icon, Um icone de uma estrela"
-    },
-    {
-        icon: "trophy", 
-        altIcon: "a trophy icon, Um icone de um troféu"
+        icon: "padlock",
+        altIcon: "a padlock icon, Um icone de um cadeado"
     },
     {
         icon: "redPotion", 
         altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
     },
     {
-        icon: "bluePotion", 
-        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    },
-    // second icons
-    {
-        icon: "crown", 
-        altIcon: "a crown icon, Um icone de uma coroa"
+        icon: "ruby",
+        altIcon: "a Ruby icon, Um icone de um Rubi"
     },
     {
-        icon: "diamond", 
-        altIcon: "a start icon, Um icone de um diamante"
-    },
-    {
-        icon: "letter", 
-        altIcon: "a letter icon, Um icone de uma carta"
-    },
-    {
-        icon: "lightning", 
-        altIcon: "a lightning icon, Um icone de um raio"
+        icon: "silver-star",
+        altIcon: "a Silver star icon, Um icone de uma estrela prata"
     },
     {
         icon: "star", 
@@ -55,73 +58,69 @@ const cards = [
     {
         icon: "trophy", 
         altIcon: "a trophy icon, Um icone de um troféu"
-    },
-    {
-        icon: "redPotion", 
-        altIcon: "a Red potion icon, Um icone de uma garrafa na cor azul"
-    },
-    {
-        icon: "bluePotion", 
-        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    },
-    // third icons
-    {
-        icon: "crown", 
-        altIcon: "a crown icon, Um icone de uma coroa"
-    },
-    {
-        icon: "diamond", 
-        altIcon: "a start icon, Um icone de um diamante"
-    },
-    {
-        icon: "letter", 
-        altIcon: "a letter icon, Um icone de uma carta"
-    },
-    {
-        icon: "lightning", 
-        altIcon: "a lightning icon, Um icone de um raio"
-    },
-    {
-        icon: "star", 
-        altIcon: "a star icon, Um icone de uma estrela"
-    },
-    {
-        icon: "trophy", 
-        altIcon: "a trophy icon, Um icone de um troféu"
-    },
-    {
-        icon: "redPotion", 
-        altIcon: "a Red potion icon, Um icone de uma garrafa na cor azul"
-    },
-    {
-        icon: "bluePotion", 
-        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    },
-    {
-        icon: "bluePotion", 
-        altIscon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    },
-    {
-        icon: "star", 
-        altIcon: "a star icon, Um icone de uma estrela"
-    },
-    {
-        icon: "trophy", 
-        altIcon: "a trophy icon, Um icone de um troféu"
-    },
-    {
-        icon: "redPotion", 
-        altIcon: "a Red potion icon, Um icone de uma garrafa na cor azul"
-    },
-    {
-        icon: "bluePotion", 
-        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
-    },
-    {
-        icon: "bluePotion", 
-        altIscon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
     },
 
+    // second icons
+    {
+        icon: "bluePotion", 
+        altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
+    },
+    {
+        icon: "crown", 
+        altIcon: "a crown icon, Um icone de uma coroa"
+    },
+    {
+        icon: "diamond", 
+        altIcon: "a start icon, Um icone de um diamante"
+    },
+    {
+        icon: "flag", 
+        altIcon: "a flag icon, Um icone de uma bandeira"
+    },
+    {
+        icon: "gold-star",
+        altIcon: "a Gold star icon, Um icone de uma estrala dourada"
+    },
+    {
+        icon: "heart",
+        altIcon: "a heart icon, Um icone de um coração"
+    },
+    {
+        icon: "hourglass",
+        altIcon: "a hourglass icon, Um icone de um ampulheta"
+    },
+    {
+        icon: "letter", 
+        altIcon: "a letter icon, Um icone de uma carta"
+    },
+    {
+        icon: "lightning", 
+        altIcon: "a lightning icon, Um icone de um raio"
+    },
+    {
+        icon: "padlock",
+        altIcon: "a padlock icon, Um icone de um cadeado"
+    },
+    {
+        icon: "redPotion", 
+        altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
+    },
+    {
+        icon: "ruby",
+        altIcon: "a Ruby icon, Um icone de um Rubi"
+    },
+    {
+        icon: "silver-star",
+        altIcon: "a Silver star icon, Um icone de uma estrela prata"
+    },
+    {
+        icon: "star", 
+        altIcon: "a star icon, Um icone de uma estrela"
+    },
+    {
+        icon: "trophy", 
+        altIcon: "a trophy icon, Um icone de um troféu"
+    }
 ];
 
 export default cards;

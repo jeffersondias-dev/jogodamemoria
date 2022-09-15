@@ -1,6 +1,6 @@
 import './style.css';
 
-function CardGame(icon = "chest", alt = "Front of Card, a chest icon") {
+function CardGame(icon = "front-chest", alt = "Icone de um baú") {
     return /*html*/ `
         <article class="card-game">
             <img src="/images/${icon}.png" alt="${alt}">
