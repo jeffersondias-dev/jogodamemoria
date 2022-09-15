@@ -12,7 +12,7 @@ $root.insertAdjacentHTML(
     'beforeend',
     `   
     ${ScoreBoard("Player 1")}
-    ${BoardGame(9)}
+    ${BoardGame(12)}
     ${Footer("jefferson")}
 
         `
