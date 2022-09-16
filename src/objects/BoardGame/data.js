@@ -1,18 +1,18 @@
 const cards = [
     {
-        icon: "bluePotion", 
+        icon: "bluePotion",
         altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
     },
     {
-        icon: "crown", 
+        icon: "crown",
         altIcon: "a crown icon, Um icone de uma coroa"
     },
     {
-        icon: "diamond", 
-        altIcon: "a start icon, Um icone de um diamante"
+        icon: "diamond",
+        altIcon: "a diamond icon, Um icone de um diamante"
     },
     {
-        icon: "flag", 
+        icon: "flag",
         altIcon: "a flag icon, Um icone de uma bandeira"
     },
     {
@@ -28,11 +28,11 @@ const cards = [
         altIcon: "a hourglass icon, Um icone de um ampulheta"
     },
     {
-        icon: "letter", 
+        icon: "letter",
         altIcon: "a letter icon, Um icone de uma carta"
     },
     {
-        icon: "lightning", 
+        icon: "lightning",
         altIcon: "a lightning icon, Um icone de um raio"
     },
     {
@@ -40,7 +40,7 @@ const cards = [
         altIcon: "a padlock icon, Um icone de um cadeado"
     },
     {
-        icon: "redPotion", 
+        icon: "redPotion",
         altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
     },
     {
@@ -52,29 +52,29 @@ const cards = [
         altIcon: "a Silver star icon, Um icone de uma estrela prata"
     },
     {
-        icon: "star", 
+        icon: "star",
         altIcon: "a star icon, Um icone de uma estrela"
     },
     {
-        icon: "trophy", 
+        icon: "trophy",
         altIcon: "a trophy icon, Um icone de um troféu"
     },
 
     // second icons
     {
-        icon: "bluePotion", 
+        icon: "bluePotion",
         altIcon: "a Blue potion icon | Um icone de uma garrafa na cor vermelha"
     },
     {
-        icon: "crown", 
+        icon: "crown",
         altIcon: "a crown icon, Um icone de uma coroa"
     },
     {
-        icon: "diamond", 
-        altIcon: "a start icon, Um icone de um diamante"
+        icon: "diamond",
+        altIcon: "a diamond icon, Um icone de um diamante"
     },
     {
-        icon: "flag", 
+        icon: "flag",
         altIcon: "a flag icon, Um icone de uma bandeira"
     },
     {
@@ -90,11 +90,11 @@ const cards = [
         altIcon: "a hourglass icon, Um icone de um ampulheta"
     },
     {
-        icon: "letter", 
+        icon: "letter",
         altIcon: "a letter icon, Um icone de uma carta"
     },
     {
-        icon: "lightning", 
+        icon: "lightning",
         altIcon: "a lightning icon, Um icone de um raio"
     },
     {
@@ -102,7 +102,7 @@ const cards = [
         altIcon: "a padlock icon, Um icone de um cadeado"
     },
     {
-        icon: "redPotion", 
+        icon: "redPotion",
         altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
     },
     {
@@ -114,11 +114,11 @@ const cards = [
         altIcon: "a Silver star icon, Um icone de uma estrela prata"
     },
     {
-        icon: "star", 
+        icon: "star",
         altIcon: "a star icon, Um icone de uma estrela"
     },
     {
-        icon: "trophy", 
+        icon: "trophy",
         altIcon: "a trophy icon, Um icone de um troféu"
     }
 ];

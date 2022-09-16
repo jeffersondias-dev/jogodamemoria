@@ -2,7 +2,7 @@ import './style.css';
 import CardFrontBack from '../../components/CardFrontBack';
 import cards from "./data";
 
-function BoardGame(amountCards) {
+function BoardGame() {
 
 
     const flipAndHideCards = ($cardsActive) => {
