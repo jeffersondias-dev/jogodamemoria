@@ -4,7 +4,8 @@ import Timer from '../../components/Timer';
 
 
 
-function ScoreBoard(content) {
+function ScoreBoard() {
+
     return /*html*/ `
     <header class="score-board">
         ${PlayerName("Player 1")}
