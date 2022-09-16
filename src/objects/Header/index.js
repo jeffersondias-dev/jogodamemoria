@@ -1,9 +1,9 @@
 import './style.css';
 
-function Header () {
+function Header() {
     return /*html*/`
         <header class="header">
-            <h1>Jogo da Memória</h1>
+            <h1> Jogo Da Memória </h1>
         </header>
     `
 }

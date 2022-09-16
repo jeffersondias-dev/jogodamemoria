@@ -1,7 +1,7 @@
 .arrow-down {
     width: 25px;
     position: absolute;
-    top: 50px;
+    top: 125px;
     transform: translateX(-44px);
     transition: 200ms ease-in-out;
 }
