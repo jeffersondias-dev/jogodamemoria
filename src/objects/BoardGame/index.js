@@ -4,17 +4,16 @@ import cards from "./data";
 
 function BoardGame() {
 
-
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
     };
 
-    const swapPlayer = () => {
-        const $arrowDown = document.querySelector('.arrow-down');
-        const currentPlayer = $arrowDown.getAttribute('data-currentPlayer');
-
-        $arrowDown.setAttribute('data-currentPlayer', currentPlayer == 1 ? 2 : 1);
+    const matchingCards = ($cardsActive) => {
+        if ($cardsActive[0].innerHTML === $cardsActive[1].innerHTML) {
+            $cardsActive.forEach((card) => card.classList.add('-matching'));
+        }
     };
+
 
     window.boardGame = {}
     window.boardGame.handleClick = () => {
@@ -23,15 +22,16 @@ function BoardGame() {
         const $cardsActive = $boardGame.querySelectorAll('.card-front-back.-active')
 
         if ($cardsActive.length === 2) {
+            matchingCards($cardsActive);
             setTimeout(() => {
                 flipAndHideCards($cardsActive);
-                swapPlayer();
             }, 1000);
         }
         else if ($cardsActive.length >= 3) {
             flipAndHideCards($cardsActive);
         }
     }
+
 
     const randomCards = (htmlCardsList) => {
         for (let i = 0; i < htmlCardsList.length; i++) {

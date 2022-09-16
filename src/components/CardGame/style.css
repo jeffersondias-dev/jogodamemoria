@@ -11,7 +11,11 @@
 .card-game img {
     width: var(--width-images);
     height: var(--height-images);
-    border-radius: 15px;
+}
+
+.card-game img:hover {
+    cursor: pointer;
+
 }
 
 
