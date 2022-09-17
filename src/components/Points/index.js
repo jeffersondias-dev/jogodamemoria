@@ -11,8 +11,6 @@ function Points(elements) {
         display.textContent = points;
     }, 1000);
 
-
-
     return /*html*/` 
     <div class="pointsContainer">
         <span id="points"></span>

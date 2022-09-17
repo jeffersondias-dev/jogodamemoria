@@ -6,7 +6,7 @@ function Timer() {
 
     function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
-        let bonusTimer = 0;
+        let addBonus = 0;
 
         setInterval(() => {
             minutes = parseInt(timer / 60, 10);
@@ -15,16 +15,14 @@ function Timer() {
             seconds = seconds < 10 ? "0" + seconds : seconds;
             display.textContent = minutes + ":" + seconds;
             const pontos = document.querySelector('#points');
-            console.log(pontos.textContent);
 
-            if (pontos.textContent > bonusTimer) {
+            if (pontos.textContent > addBonus) {
                 timer = timer + 10;
-                bonusTimer = bonusTimer + 1;
-
+                addBonus = addBonus + 1;
             }
 
             if (--timer <= 0) {
-                timer = console.log("acabou o tempo");
+                timer = 60;
             }
 
         }, 1000);

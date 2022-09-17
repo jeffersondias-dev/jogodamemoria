@@ -6,8 +6,10 @@ import Points from '../../components/Points';
 function BoardGame() {
 
 
+
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
+
     };
 
     const matchingCards = ($cardsActive) => {
@@ -17,12 +19,28 @@ function BoardGame() {
         }
     };
 
+    const timeOut = ($allCards) => {
+        $allCards.forEach((card) => card.classList.remove('-matching'));
+        $allCards.forEach((card) => card.classList.remove('-active'));
+        location.reload()
+    };
 
     window.boardGame = {}
     window.boardGame.handleClick = () => {
+        setInterval(() => {
+            confirmTime($allCards);
+        }, 1000);
 
         const $boardGame = document.querySelector('.board-game');
         const $cardsActive = $boardGame.querySelectorAll('.card-front-back.-active')
+        const $allCards = $boardGame.querySelectorAll('.card-front-back')
+
+        const confirmTime = () => {
+            const timeNow = document.querySelector('#timer');
+            if (timeNow.textContent === '00:50') {
+                timeOut($allCards);
+            }
+        };
 
         if ($cardsActive.length === 2) {
             matchingCards($cardsActive);
@@ -45,6 +63,7 @@ function BoardGame() {
         }
     };
 
+
     const htmlCardsList = cards.map((card) => CardFrontBack(card.icon, card.altIcon));
     randomCards(htmlCardsList);
     const $htmlCards = htmlCardsList.join('');
@@ -55,6 +74,7 @@ function BoardGame() {
         <section class="board-game" onClick="boardGame.handleClick()">
             ${$htmlCards}
         </section>
+
     `;
 }
 export default BoardGame;
