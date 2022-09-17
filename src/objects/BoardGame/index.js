@@ -37,7 +37,7 @@ function BoardGame() {
 
         const confirmTime = () => {
             const timeNow = document.querySelector('#timer');
-            if (timeNow.textContent === '00:50') {
+            if (timeNow.textContent === '00:00') {
                 timeOut($allCards);
             }
         };
