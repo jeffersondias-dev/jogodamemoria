@@ -1,8 +1,10 @@
 import './style.css';
 import CardFrontBack from '../../components/CardFrontBack';
 import cards from "./data";
+import Points from '../../components/Points';
 
 function BoardGame() {
+
 
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
@@ -11,6 +13,7 @@ function BoardGame() {
     const matchingCards = ($cardsActive) => {
         if ($cardsActive[0].innerHTML === $cardsActive[1].innerHTML) {
             $cardsActive.forEach((card) => card.classList.add('-matching'));
+            Points(true);
         }
     };
 
