@@ -6,9 +6,9 @@ import EndGame from '../../components/EndGame';
 
 function BoardGame() {
 
+
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
-
     };
 
     const matchingCards = ($cardsActive) => {
@@ -23,21 +23,30 @@ function BoardGame() {
         $showAndCloseEndGame.classList.add('-timeIsOut');
     };
 
+
     window.boardGame = {}
     window.boardGame.handleClick = () => {
-        setInterval(() => {
-            confirmTime($allCards);
-        }, 1000);
 
         const $boardGame = document.querySelector('.board-game');
+        const $showAndEndGame = document.querySelector('.end-game');
+
         const $cardsActive = $boardGame.querySelectorAll('.card-front-back.-active')
         const $allCards = $boardGame.querySelectorAll('.card-front-back');
-        const $showAndCloseEndGame = $boardGame.querySelector('.end-game');
+
+        const endPoints = document.querySelector('#points');
+        const endTimer = document.querySelector('#timer');
+
+
+        const checkedTimer = setInterval(() => {
+            confirmTime(endPoints, endTimer);
+        }, 1000);
+
 
         const confirmTime = () => {
             const timeNow = document.querySelector('#timer');
             if (timeNow.textContent === '00:00') {
-                timeOut($allCards, $showAndCloseEndGame);
+                timeOut($allCards, $showAndEndGame);
+                clearTimeout(checkedTimer);
             }
         };
 
@@ -51,7 +60,6 @@ function BoardGame() {
             flipAndHideCards($cardsActive);
         }
     }
-
 
     const randomCards = (htmlCardsList) => {
         for (let i = 0; i < htmlCardsList.length; i++) {
@@ -67,13 +75,15 @@ function BoardGame() {
     randomCards(htmlCardsList);
     const $htmlCards = htmlCardsList.join('');
 
-
     return /*html*/`
-        <section class="board-game" onClick="boardGame.handleClick()">
-            ${$htmlCards}
-            ${EndGame()}
-        </section>
-
+            <section class="board-game" onClick="boardGame.handleClick()">
+                ${$htmlCards}
+                ${EndGame()
+        }
+            </section >
     `;
 }
+
+
+
 export default BoardGame;

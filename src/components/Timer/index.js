@@ -26,7 +26,7 @@ function Timer() {
                 clearInterval(setTimer);
             }
 
-        }, 100);
+        }, 1000);
 
     }
 

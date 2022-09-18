@@ -1,3 +1,4 @@
+import EndGame from '../EndGame';
 import './style.css';
 let points = 0;
 
@@ -9,6 +10,7 @@ function Points(elements) {
     setInterval(() => {
         const display = document.querySelector('#points');
         display.textContent = points;
+        EndGame(points);
     }, 1000);
 
     return /*html*/` 

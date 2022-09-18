@@ -14,5 +14,5 @@ $root.insertAdjacentHTML(
     ${Header()}
     ${ScoreBoard()}
     ${BoardGame()}
-        `
+    `
 );

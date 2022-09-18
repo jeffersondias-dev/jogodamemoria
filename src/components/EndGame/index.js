@@ -1,11 +1,20 @@
 import './style.css';
 
-function EndGame() {
+function EndGame(element) {
+
+    if (element >= 0) {
+        const $points = document.querySelector('#end-points');
+        $points.textContent = `${element} Pontos`;
+    }
+
 
     return /*html*/ `
     <div class="end-game">
         <h1 class="title">End Game</h1>
-    </div>`
+
+        <span class="end-points" id="end-points"></span>
+        
+    </div > `
 }
 
 
