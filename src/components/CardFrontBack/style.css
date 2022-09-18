@@ -25,3 +25,7 @@
 .card-front-back.-matching {
     transform: rotateY(180deg)
 }
+
+.card-front-back.-timeIsOut {
+    display: none;
+}
