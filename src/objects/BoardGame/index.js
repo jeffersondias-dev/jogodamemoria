@@ -2,10 +2,9 @@ import './style.css';
 import CardFrontBack from '../../components/CardFrontBack';
 import cards from "./data";
 import Points from '../../components/Points';
+import EndGame from '../../components/EndGame';
 
 function BoardGame() {
-
-
 
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
@@ -19,10 +18,9 @@ function BoardGame() {
         }
     };
 
-    const timeOut = ($allCards) => {
-        $allCards.forEach((card) => card.classList.remove('-matching'));
-        $allCards.forEach((card) => card.classList.remove('-active'));
-        location.reload()
+    const timeOut = ($allCards, $showAndCloseEndGame) => {
+        $allCards.forEach((card) => card.classList.add('-timeIsOut'));
+        $showAndCloseEndGame.classList.add('-timeIsOut');
     };
 
     window.boardGame = {}
@@ -33,12 +31,13 @@ function BoardGame() {
 
         const $boardGame = document.querySelector('.board-game');
         const $cardsActive = $boardGame.querySelectorAll('.card-front-back.-active')
-        const $allCards = $boardGame.querySelectorAll('.card-front-back')
+        const $allCards = $boardGame.querySelectorAll('.card-front-back');
+        const $showAndCloseEndGame = $boardGame.querySelector('.end-game');
 
         const confirmTime = () => {
             const timeNow = document.querySelector('#timer');
             if (timeNow.textContent === '00:00') {
-                timeOut($allCards);
+                timeOut($allCards, $showAndCloseEndGame);
             }
         };
 
@@ -69,10 +68,10 @@ function BoardGame() {
     const $htmlCards = htmlCardsList.join('');
 
 
-
     return /*html*/`
         <section class="board-game" onClick="boardGame.handleClick()">
             ${$htmlCards}
+            ${EndGame()}
         </section>
 
     `;

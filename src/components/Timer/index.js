@@ -8,6 +8,7 @@ function Timer() {
         var timer = duration, minutes, seconds;
         let addBonus = 0;
 
+        boardGame.handleClick();
         const setTimer = setInterval(() => {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
@@ -22,10 +23,6 @@ function Timer() {
             }
 
             if (--timer < 0) {
-
-                const $boardGame = document.querySelector('.board-game');
-                const $allCards = $boardGame.querySelectorAll('.card-front-back')
-                $allCards.forEach((card) => card.classList.add('-timeIsOut'));
                 clearInterval(setTimer);
             }
 
