@@ -10,7 +10,10 @@ body {
 }
 
 body {
-    background-image: url('/public/images/background-horizontal.png');
+    background-image:url('/public/images/background-horizontal.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
@@ -18,8 +21,19 @@ body {
 
 @media only screen and (min-width:412px) {
     body {
+        background-image:url('/public/images/background.png');
+        background-size: auto;
+        background-repeat: no-repeat;
         max-width: 402px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media only screen and (min-width:1080px) {
+    body {
+        background-image:url('/public/images/background-horizontal.png');
+        background-size: auto;
+        background-repeat: no-repeat;
     }
 }
