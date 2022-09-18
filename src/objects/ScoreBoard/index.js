@@ -9,9 +9,13 @@ function ScoreBoard() {
 
     return /*html*/ `
     <header class="score-board">
-        ${PlayerName("Player 1")}
+        <div class="player-info">
+        ${PlayerName("Player")}
+        </div>
+        <div class="game-info">
         ${Points()}
         ${Timer()}
+        </div>
 
     </header>
 `;

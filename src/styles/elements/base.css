@@ -15,9 +15,15 @@ body {
 }
 
 body {
-    background-color: #46056d;
+    background-image: url('/public/images/background-horizontal.png');
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Press Start 2P', cursive;
+}
+
+@media only screen and (max-width:1080px) {
+    body {
+        background-image: url("/public/images/background-horizontal.png");
+    }
 }

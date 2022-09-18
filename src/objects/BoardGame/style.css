@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     gap: 15px;
     perspective: 400px;
-    background-color: #7c03dc;
+    background-color: rgba(69, 5, 108, 0.7);
     border-radius: 10px;
     box-shadow: 2px 2px 4px #000;
     padding: 8px;

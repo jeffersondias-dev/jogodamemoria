@@ -1,0 +1,18 @@
+.pointsContainer {
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #45056c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 5px #000;
+    margin-right: 10px;
+}
+
+.points {
+    color: var(--color-amarelo);
+    font-size: 2rem;
+    font-family: 'Bungee Spice', cursive;
+    padding: 10px;
+}

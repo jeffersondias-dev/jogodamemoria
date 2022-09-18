@@ -13,7 +13,7 @@ function Points(elements) {
 
     return /*html*/` 
     <div class="pointsContainer">
-        <span id="points"></span>
+        <span class="points" id="points">0</span>
     </div>
     `;
 }

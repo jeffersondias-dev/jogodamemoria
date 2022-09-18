@@ -4,8 +4,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: #7c03dc;
+    background-color: rgba(69, 5, 108, 0.9);
     border-radius: 10px;
     margin: 10px 2px;
     box-shadow: 2px 2px 4px #000;
+}
+
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
