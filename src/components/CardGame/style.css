@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--width-default);
-    height: var(--height-default);
+    width: 5rem;
+    height: 5rem;
 }
 
 
 .card-game img {
-    width: var(--width-images);
-    height: var(--height-images);
+    width: 5.5rem;
+    height: 5.5rem;
 }
 
 .card-game img:hover {
@@ -19,3 +19,9 @@
 }
 
 
+@media only screen and (min-width:412px) {
+    .card-game img {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}

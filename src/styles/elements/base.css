@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-:root {
-    --width-default: 50px;
-    --height-default: 50px;
-    --width-images: auto;
-    --height-images: 55px;
-}
+
 
 html,
 body {
@@ -19,11 +14,12 @@ body {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Press Start 2P', cursive;
 }
 
-@media only screen and (max-width:1080px) {
+@media only screen and (min-width:412px) {
     body {
-        background-image: url("/public/images/background-horizontal.png");
+        max-width: 402px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
