@@ -44,16 +44,16 @@ const cards = [
         altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
     },
     {
-        icon: "ruby",
-        altIcon: "a Ruby icon, Um icone de um Rubi"
+        icon: "red-stone",
+        altIcon: "a red stone icon, Um icone de uma pedra vermelha"
     },
     {
         icon: "silver-star",
         altIcon: "a Silver star icon, Um icone de uma estrela prata"
     },
     {
-        icon: "star",
-        altIcon: "a star icon, Um icone de uma estrela"
+        icon: "green-stone",
+        altIcon: "a green stone icon, Um icone de uma pedra verde"
     },
     {
         icon: "trophy",
@@ -106,16 +106,16 @@ const cards = [
         altIcon: "a Red Potion icon, Um icone de uma garrafa na cor azul"
     },
     {
-        icon: "ruby",
-        altIcon: "a Ruby icon, Um icone de um Rubi"
+        icon: "red-stone",
+        altIcon: "a red stone icon, Um icone de uma pedra vermelha"
     },
     {
         icon: "silver-star",
         altIcon: "a Silver star icon, Um icone de uma estrela prata"
     },
     {
-        icon: "star",
-        altIcon: "a star icon, Um icone de uma estrela"
+        icon: "green-stone",
+        altIcon: "a green stone icon, Um icone de uma pedra verde"
     },
     {
         icon: "trophy",

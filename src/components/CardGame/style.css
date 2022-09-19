@@ -4,24 +4,19 @@
     justify-content: center;
     align-items: center;
     width: 5rem;
-    height: 5rem;
+    height: auto;
 }
 
 
 .card-game img {
-    width: 5.5rem;
-    height: 5.5rem;
-}
-
-.card-game img:hover {
-    cursor: pointer;
-
+    width: auto;
+    height: 40px;
 }
 
 
 @media only screen and (min-width:412px) {
     .card-game img {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: auto;
+        height: 47px;
     }
 }
