@@ -12,7 +12,7 @@ function Footer() {
     return /*html*/ `
 
         <footer class="footer">  
-        <button class="button-start" onClick="restartGame.handleClick()">Start</button>  
+        <button class="button-restart" onClick="restartGame.handleClick()">Reiniciar</button>  
         </footer>
     
     `;
