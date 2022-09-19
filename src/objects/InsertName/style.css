@@ -1,0 +1,15 @@
+.insert-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    width: 90vw;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 4rem;
+}

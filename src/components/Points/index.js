@@ -24,7 +24,6 @@ function Points(point, loserPoint) {
         const chances = document.querySelector('#chances');
         display.textContent = points;
         chances.textContent = loserPoints;
-        console.log(loserPoints);
         EndGame(points);
 
     }, 1000);

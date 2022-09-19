@@ -1,11 +1,12 @@
 import "./style.css";
 
 
-function Footer(content) {
+function Footer() {
+
     return /*html*/ `
 
         <footer class="footer">
-            <p>&copy; ${new Date().getFullYear()}  ${content}</p>
+            <button class="button-name" onClick="startGame.handleClick(true)">Start</button>  
         </footer>
     
     `;

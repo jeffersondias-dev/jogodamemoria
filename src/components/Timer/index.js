@@ -31,7 +31,6 @@ function Timer(element = true) {
             display.textContent = minutes + ":" + seconds;
             const pontos = document.querySelector('#points');
             if (pontos.textContent > addBonus) {
-                console.log("subiu 1")
                 timer = timer + 5;
                 addBonus = addBonus + 1;
             }
