@@ -6,7 +6,6 @@ import EndGame from '../../components/EndGame';
 
 function BoardGame() {
 
-
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
         Points(false, true);
@@ -28,6 +27,7 @@ function BoardGame() {
         $allCards.forEach((card) => card.classList.add('-timeIsOut'));
         $showAndCloseEndGame.classList.add('-timeIsOut');
     };
+
 
     window.boardGame = {}
     window.boardGame.handleClick = () => {

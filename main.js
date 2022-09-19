@@ -5,31 +5,23 @@ import Header from './src/objects/Header';
 import ScoreBoard from '/src/objects/ScoreBoard';
 import BoardGame from '/src/objects/BoardGame';
 import Footer from './src/objects/Footer';
-import InsertName from './src/objects/InsertName';
 
+
+window.startGame = {};
+window.startGame.handleClick = () => {
+      console.log("restarting")
+};
+
+startGame.handleClick();
 
 const $root = document.querySelector('#root');
-
-const Name = true;
-
-if (Name === true) {
-
-    $root.insertAdjacentHTML(
-        'beforeend',
-        `   
+$root.insertAdjacentHTML(
+      'beforeend',
+      `   
             ${Header()}
             ${ScoreBoard()}
             ${BoardGame()}
+            ${Footer()}
       `
-    );
+);
 
-} else {
-    $root.insertAdjacentHTML(
-        'beforeend',
-        `   
-                ${Header()}
-                ${InsertName()}
-                ${Footer()}
-                `
-    );
-}

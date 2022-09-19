@@ -3,10 +3,16 @@ import "./style.css";
 
 function Footer() {
 
+    window.restartGame = {};
+
+    window.restartGame.handleClick = () => {
+        location.reload();
+    };
+
     return /*html*/ `
 
-        <footer class="footer">
-            <button class="button-name" onClick="startGame.handleClick(true)">Start</button>  
+        <footer class="footer">  
+        <button class="button-start" onClick="restartGame.handleClick()">Start</button>  
         </footer>
     
     `;

@@ -46,7 +46,7 @@ function Timer(element = true) {
 
     }
 
-    window.onload = function () {
+    window.onload = () => {
         let duration = 60;
         let display = document.querySelector('#timer');
         startTimer(duration, display);
