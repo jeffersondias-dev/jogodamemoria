@@ -1,14 +1,29 @@
 
+import Points from '../Points';
 import './style.css';
 
-function Timer() {
+function Timer(element = true) {
 
 
     function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         let addBonus = 0;
 
+
         boardGame.handleClick();
+        const chances = document.querySelector('#chances');
+
+        if (element == true) {
+            const acreaseTimer = setInterval(() => {
+                if (chances.textContent == 5) {
+                    timer = timer - 1;
+                    Points(false, 2);
+                    Timer(true);
+                    console.log('só tirou 1')
+                }
+            }, 1000);
+        }
+
         const setTimer = setInterval(() => {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
@@ -16,7 +31,6 @@ function Timer() {
             seconds = seconds < 10 ? "0" + seconds : seconds;
             display.textContent = minutes + ":" + seconds;
             const pontos = document.querySelector('#points');
-
             if (pontos.textContent > addBonus) {
                 timer = timer + 10;
                 addBonus = addBonus + 1;

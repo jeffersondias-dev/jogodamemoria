@@ -16,3 +16,7 @@
     font-family: 'Bungee Spice', cursive;
     padding: 10px;
 }
+
+#chances {
+    display: none;
+}

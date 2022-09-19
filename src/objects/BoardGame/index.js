@@ -9,12 +9,13 @@ function BoardGame() {
 
     const flipAndHideCards = ($cardsActive) => {
         $cardsActive.forEach((card) => card.classList.remove('-active'));
+        Points(false, true);
     };
 
     const matchingCards = ($cardsActive) => {
         if ($cardsActive[0].innerHTML === $cardsActive[1].innerHTML) {
             $cardsActive.forEach((card) => card.classList.add('-matching'));
-            Points(true);
+            Points(true, 2);
         }
     };
 
