@@ -14,7 +14,7 @@ function Timer(element = true) {
         const chances = document.querySelector('#chances');
 
         if (element == true) {
-            const acreaseTimer = setInterval(() => {
+            setInterval(() => {
                 if (chances.textContent == 5) {
                     timer = timer - 1;
                     Points(false, 2);
@@ -32,7 +32,7 @@ function Timer(element = true) {
             display.textContent = minutes + ":" + seconds;
             const pontos = document.querySelector('#points');
             if (pontos.textContent > addBonus) {
-                timer = timer + 10;
+                timer = timer + 5;
                 addBonus = addBonus + 1;
             }
 
