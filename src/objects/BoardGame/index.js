@@ -24,6 +24,10 @@ function BoardGame() {
         $showAndCloseEndGame.classList.add('-timeIsOut');
     };
 
+    const winGame = ($allCards, $showAndCloseEndGame) => {
+        $allCards.forEach((card) => card.classList.add('-timeIsOut'));
+        $showAndCloseEndGame.classList.add('-timeIsOut');
+    };
 
     window.boardGame = {}
     window.boardGame.handleClick = () => {
@@ -33,7 +37,7 @@ function BoardGame() {
 
         const $cardsActive = $boardGame.querySelectorAll('.card-front-back.-active')
         const $allCards = $boardGame.querySelectorAll('.card-front-back');
-
+        const $winGame = $boardGame.querySelectorAll('.card-front-back.-matching');
         const endPoints = document.querySelector('#points');
         const endTimer = document.querySelector('#timer');
 
@@ -60,6 +64,11 @@ function BoardGame() {
         else if ($cardsActive.length >= 3) {
             flipAndHideCards($cardsActive);
         }
+
+        if ($winGame.length == 30) {
+            winGame($allCards, $showAndEndGame);
+        }
+
     }
 
     const randomCards = (htmlCardsList) => {

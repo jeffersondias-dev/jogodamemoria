@@ -2,6 +2,7 @@
     display: none;
 }
 
+
 .end-game.-timeIsOut {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,14 @@
     font-size: 4rem;
 }
 
-.end-game.-timeIsOut >.end-points {
+.end-game.-timeIsOut >.title {
     padding: 2rem 0;
+}
+.end-game.-timeIsOut >#end-points {
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+
+.end-game.-timeIsOut >#end-timer {
     font-size: 3rem;
 }

@@ -15,7 +15,6 @@ function Points(point, loserPoint) {
 
     if (loserPoint == 1) {
         loserPoints++;
-        console.log(loserPoints);
     } else if (loserPoint == 2) {
         loserPoints = 0;
     }
@@ -25,6 +24,7 @@ function Points(point, loserPoint) {
         const chances = document.querySelector('#chances');
         display.textContent = points;
         chances.textContent = loserPoints;
+        console.log(loserPoints);
         EndGame(points);
 
     }, 1000);

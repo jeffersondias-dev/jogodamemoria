@@ -19,7 +19,6 @@ function Timer(element = true) {
                     timer = timer - 1;
                     Points(false, 2);
                     Timer(true);
-                    console.log('só tirou 1')
                 }
             }, 1000);
         }
@@ -32,6 +31,7 @@ function Timer(element = true) {
             display.textContent = minutes + ":" + seconds;
             const pontos = document.querySelector('#points');
             if (pontos.textContent > addBonus) {
+                console.log("subiu 1")
                 timer = timer + 5;
                 addBonus = addBonus + 1;
             }
