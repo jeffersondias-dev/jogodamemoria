@@ -7,8 +7,9 @@
 
 
  <p align="center"> Jogo da Memória - 🚧  ... Em construção ... 🚧 </p>
- <p align="center"> Jogo da Memória com @Vite/Vanilla </p>
+ Jogo da Memória com @Vite/Vanilla
  
+ ### Jogo em Produção na Vercel: **[Jogo da Memória](https://jogodamemoria-jeffersondias-dev.vercel.app)** 🚀
 
 
 
