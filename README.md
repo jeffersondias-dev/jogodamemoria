@@ -1,17 +1,16 @@
 <h1 align="center">Jogo da Memória</h1>
 
+<img src="public/images/print-1.jpg"
+         alt="Jogo da Memória" width="200" height="400">
+         <img src="public/images/print-2.jpg"
+         alt="Jogo da Memória" width="200" height="400">
+
 
  <p align="center"> Jogo da Memória - 🚧  ... Em construção ... 🚧 </p>
  <p align="center"> Jogo da Memória com @Vite/Vanilla </p>
  
 
-<figure>
-    <img src="/images/print-1.jpg"
-         alt="Jogo da Memória" width="200" height="100">
-    <img src="/images/print-2.jpg"
-         alt="Jogo da Memória" width="200" height="100">
-    <figcaption>Prints do jogo.</figcaption>
-</figure>
+
 
 
 
