@@ -35,6 +35,9 @@ function Timer(element = true) {
                 addBonus = addBonus + 1;
             }
 
+            if (addBonus === 15) {
+                clearInterval(setTimer);
+            }
             if (--timer < 0) {
                 clearInterval(setTimer);
             }

@@ -65,8 +65,9 @@ function BoardGame() {
             flipAndHideCards($cardsActive);
         }
 
-        if ($winGame.length == 30) {
+        if ($winGame.length >= 30) {
             winGame($allCards, $showAndEndGame);
+            clearTimeout(checkedTimer);
         }
 
     }
